@@ -72,7 +72,7 @@ public class Inicio {
 			System.out.println("Calculando el resto de la división...");
 			total = numero1 % numero2;
 			System.out.println("El resto es: " + total);
-		}
+		} 
 		
 		default:
 			System.out.println("Opción inexistente");
