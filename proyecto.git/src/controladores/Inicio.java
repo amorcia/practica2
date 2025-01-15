@@ -18,7 +18,6 @@ public class Inicio {
 		System.out.println("2.Restar");
 		System.out.println("3.Multiplicar");
 		System.out.println("4.Dividir");
-		System.out.println("5.Resto de la división");
 		System.out.println("----------------");
 		System.out.println("Elija la opción deseada: ");
 		opcionUsuario = scanner.nextByte();
@@ -28,6 +27,7 @@ public class Inicio {
 			System.out.println("Cerrando menú...");
 			esCerrado = true;
 		}
+		
 		case 1: {
 			System.out.println("Introduzca el primer número: ");
 			numero1 = scanner.nextInt();
@@ -37,6 +37,7 @@ public class Inicio {
 			total = numero1 + numero2;
 			System.out.println("La suma total es: " + total);
 		}
+		
 		case 2: {
 			System.out.println("Introduzca el primer número: ");
 			numero1 = scanner.nextInt();
@@ -46,6 +47,7 @@ public class Inicio {
 			total = numero1 - numero2;
 			System.out.println("El total de la resta es: " + total);
 		}
+		
 		case 3: {
 			System.out.println("Introduzca el primer número: ");
 			numero1 = scanner.nextInt();
@@ -55,6 +57,7 @@ public class Inicio {
 			total = numero1 * numero2;
 			System.out.println("La multiplicación total es: " + total);
 		}
+		
 		case 4: {
 			System.out.println("Introduzca el dividendo: ");
 			numero1 = scanner.nextInt();
@@ -64,16 +67,6 @@ public class Inicio {
 			total = numero1 / numero2;
 			System.out.println("El cociente es: " + total);
 		}
-		case 5: {
-			System.out.println("Introduzca el dividendo: ");
-			numero1 = scanner.nextInt();
-			System.out.println("Introduzca el divisor: ");
-			numero2 = scanner.nextInt();
-			System.out.println("Calculando el resto de la división...");
-			total = numero1 % numero2;
-			System.out.println("El resto es: " + total);
-		}
-		
 		default:
 			System.out.println("Opción inexistente");
 		}
