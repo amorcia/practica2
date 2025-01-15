@@ -17,6 +17,7 @@ public class Inicio {
 		System.out.println("1.Sumar");
 		System.out.println("2.Restar");
 		System.out.println("3.Multiplicar");
+		System.out.println("4.Dividir");
 		System.out.println("----------------");
 		System.out.println("Elija la opción deseada: ");
 		opcionUsuario = scanner.nextByte();
@@ -52,6 +53,15 @@ public class Inicio {
 			System.out.println("Multiplicando...");
 			total = numero1 * numero2;
 			System.out.println("La suma en total es: " + total);
+		}
+		case 4: {
+			System.out.println("Introduzca el dividendo: ");
+			numero1 = scanner.nextInt();
+			System.out.println("Introduzca el divisor: ");
+			numero2 = scanner.nextInt();
+			System.out.println("Multiplicando...");
+			total = numero1 / numero2;
+			System.out.println("El cociente es: " + total);
 		}
 		default:
 			System.out.println("Opción inexistente");
